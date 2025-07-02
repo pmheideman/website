@@ -1,0 +1,8 @@
+name: "my-website"
+navbar:
+  title: "Paul Heideman"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
