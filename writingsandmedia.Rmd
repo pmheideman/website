@@ -1,0 +1,14 @@
+---
+title: "Writings and Media"
+output: html_document
+---
+
+# Substack
+
+# Books
+
+# Articles
+
+# Academic Publications
+
+# Media Appearances
