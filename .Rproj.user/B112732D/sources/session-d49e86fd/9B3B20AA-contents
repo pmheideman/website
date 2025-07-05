@@ -5,10 +5,19 @@ output: html_document
 
 # Substack
 
-<iframe src="https://pmheideman.substack.com/embed" 
-        width="100%" height="320" style="border:none;" 
-        scrolling="no" frameborder="0">
-</iframe>
+```{r substack-feed, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyRSS)
+library(dplyr)
+
+feed <- tidyfeed("https://pmheideman.substack.com/feed")
+
+feed %>%
+  slice_head(n = 5) %>%
+  mutate(link = paste0("[", item_title, "](", item_link, ")")) %>%
+  pull(link) %>%
+  paste0("- ", ., collapse = "\n") %>%
+  cat()
+``
 
 # Books
 
