@@ -5,18 +5,32 @@ output: html_document
 
 # Substack
 
-```{r substack-feed, echo=FALSE, message=FALSE, warning=FALSE}
-library(tidyRSS)
-library(dplyr)
+## Latest from Substack
 
-feed <- tidyfeed("https://pmheideman.substack.com/feed")
+<div id="rss-feed"></div>
 
-feed %>%
-  slice_head(n = 5) %>%
-  mutate(link = paste0("[", item_title, "](", item_link, ")")) %>%
-  pull(link) %>%
-  paste0("- ", ., collapse = "\n") %>%
-  cat()
+<script type="text/javascript">
+  async function loadRSS() {
+    const rss_url = 'https://paulheideman.substack.com/feed';
+    const api_url = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rss_url);
+
+    try {
+      const response = await fetch(api_url);
+      const data = await response.json();
+
+      let html = '<ul>';
+      data.items.slice(0, 5).forEach(item => {
+        html += `<li><a href="${item.link}" target="_blank">${item.title}</a></li>`;
+      });
+      html += '</ul>';
+      document.getElementById('rss-feed').innerHTML = html;
+    } catch (error) {
+      document.getElementById('rss-feed').innerHTML = 'Unable to load feed.';
+    }
+  }
+
+  loadRSS();
+</script>
 
 # Books
 
