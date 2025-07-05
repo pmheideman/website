@@ -3,7 +3,7 @@
     "path": "~/Stats/website/writingsandmedia.Rmd",
     "project_path": "writingsandmedia.Rmd",
     "type": "r_markdown",
-    "hash": "309233202",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1751718180214.0,
@@ -12,18 +12,18 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "13,98",
-        "scrollLine": "3",
+        "cursorPosition": "11,0",
+        "scrollLine": "0",
         "rmdVisualMode": "false",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1751718209,
+    "lastKnownWriteTime": 1751718610,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1751718209889,
+    "last_content_update": 1751718610565,
     "read_only": false,
     "read_only_alternatives": []
 }
