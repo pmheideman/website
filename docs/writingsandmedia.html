@@ -267,18 +267,49 @@ $(document).ready(function () {
 
 <div id="substack" class="section level1">
 <h1>Substack</h1>
+<div id="rss-feed">
+
+</div>
+<script type="text/javascript">
+  async function loadRSS() {
+    const rss_url = 'https://pmheideman.substack.com/feed';
+    const api_url = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rss_url);
+
+    try {
+      const response = await fetch(api_url);
+      const data = await response.json();
+
+      let html = '<ul>';
+      data.items.slice(0, 5).forEach(item => {
+        html += `<li><a href="${item.link}" target="_blank">${item.title}</a></li>`;
+      });
+      html += '</ul>';
+      document.getElementById('rss-feed').innerHTML = html;
+    } catch (error) {
+      document.getElementById('rss-feed').innerHTML = 'Unable to load feed.';
+    }
+  }
+
+  loadRSS();
+</script>
 </div>
 <div id="books" class="section level1">
 <h1>Books</h1>
 </div>
 <div id="articles" class="section level1">
 <h1>Articles</h1>
+<p>Writings have appeared in Jacobin, Dissent, and In These Times.</p>
 </div>
 <div id="academic-publications" class="section level1">
 <h1>Academic Publications</h1>
 </div>
 <div id="media-appearances" class="section level1">
 <h1>Media Appearances</h1>
+<p>Confronting Capitalism with Vivek Chibber</p>
+<p>THIS IS REVOLUTION</p>
+<p>The Majority Report with Sam Seder</p>
+<p>The Vast Majority with Micah Uetricht</p>
+<p>The Real News Network</p>
 </div>
 
 

@@ -1,0 +1,107 @@
+library(tidyverse)
+library(stringr)
+library(extrafont)
+library(wesanderson)
+
+setwd("~/Stats/substack_projects/healthcare/")
+
+read.csv("~/Downloads/data-XLo9d.csv") -> df
+#https://news.gallup.com/poll/4708/healthcare-system.aspx?utm_source=chatgpt.com
+
+
+#Date cleaning
+
+start_dates <- str_match(df$X.1, "^(\\d{4})\\s+(\\w{3})\\s+(\\d{1,2})")[, 2:4]
+
+as.data.frame(start_dates) -> start_dates
+
+start_dates %>%
+  mutate(date=ymd(paste(V1, V2, V3))) -> start_dates
+
+df$date <- start_dates$date
+
+#graphing
+
+df %>%
+  as_tibble() %>%
+  slice(-1) %>%
+  mutate(Great.deal=as.numeric(Great.deal)) %>%
+  ggplot(aes(x=date, y=Great.deal/100)) + geom_point(shape=2) +
+  geom_smooth(se=FALSE,
+              color=wes_palette("Royal1")[2]) +
+  labs(title="Survey Respondent Healthcare Worries, 2000-2025",
+       x="Year",
+       y="Pct Expressing a Great Deal of Worry About Healthcare",
+       caption="Data: Gallup")-> p
+
+
+#customizing graph
+
+p + 
+  theme(
+    text = element_text(family = "Open Sans", size = 12),
+    plot.title = element_text(size = 16, face = "bold"),
+    plot.subtitle = element_text(size = 13, face = "italic", color = "gray40"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 11),
+    axis.text.x=element_text(angle=45,
+                             hjust=1),
+    plot.background = element_rect(fill = wes_palette("Royal1")[3], color = NA),
+    panel.background = element_rect(fill = wes_palette("Royal1")[3], color = NA),
+    panel.grid.major = element_line(color = wes_palette("Royal1")[1], size = 0.3),
+    panel.grid.minor = element_line(color = wes_palette("Royal1")[1], size = 0.15)) +
+  scale_y_continuous(labels = scales::percent) -> p
+
+png(filename = "issuepriority.png",
+    width = 1600, 
+    height = 1000, 
+    res = 200, 
+    type = "cairo")
+p
+dev.off()
+
+
+
+## Uninsured Graph
+
+#https://www.kff.org/uninsured/issue-brief/key-facts-about-the-uninsured-population/
+
+read.csv("~/Downloads/data-SwROW.csv") %>%
+  as_tibble() %>%
+  rename(date=X.1,
+         uninsured = Uninsured.Rate) %>%
+  mutate(uninsured = as.numeric(str_replace(uninsured, "%", ""))) %>%
+  ggplot(aes(x=date, y=uninsured/100)) + geom_point(shape=2,
+                                                    size=2) +
+  geom_smooth(se=FALSE,
+              color=wes_palette("Royal1")[2]) +
+  labs(title="US Uninsured Rate, 2010-2023",
+       x="Year",
+       y="Uninsured Rate",
+       caption="Data: Kaiser Family Foundation") -> p2
+
+p2 + 
+  theme(
+    text = element_text(family = "Open Sans", size = 12),
+    plot.title = element_text(size = 16, face = "bold"),
+    plot.subtitle = element_text(size = 13, face = "italic", color = "gray40"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 11),
+    axis.text.x=element_text(angle=45,
+                             hjust=1),
+    plot.background = element_rect(fill = wes_palette("Royal1")[3], color = NA),
+    panel.background = element_rect(fill = wes_palette("Royal1")[3], color = NA),
+    panel.grid.major = element_line(color = wes_palette("Royal1")[1], size = 0.3),
+    panel.grid.minor = element_line(color = wes_palette("Royal1")[1], size = 0.15)) +
+  scale_y_continuous(labels = scales::percent) -> p2
+  
+
+png(filename = "uninsured.png",
+    width = 1600, 
+    height = 1000, 
+    res = 200, 
+    type = "cairo")
+p2
+dev.off()
+  
+  
