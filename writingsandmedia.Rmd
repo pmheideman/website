@@ -34,11 +34,26 @@ output: html_document
 
 # Books
 
-# Articles
+ [*Rogue Elephant: The Republicans from the Party of Business to the Party of Chaos*](https://www.versobooks.com/products/3071-rogue-elephant?srsltid=AfmBOopkwixwhTX2USNS5AEzmM2EuYpouSODgQcqpoSpuHgV9lhKyLgG) (Verso, 2025)
+ 
+With Kent Worcester, [*Third Camp Socialism: A Phyllis and Julius Jacobson Reader*](https://brill.com/display/title/71849) (Brill, 2025)
 
-Writings have appeared in Jacobin, Dissent, and In These Times.
+[*Class Struggle and the Color Line: American Socialism and the Race Question, 1900-1930*](https://www.haymarketbooks.org/books/946-class-struggle-and-the-color-line) (Haymarket, 2018)
+
+# Recent Articles
+
+["Trump's Takeover of the Republicans"](https://catalyst-journal.com/2025/04/trumps-takeover-of-the-republicans) (*Catalyst*)
+
+["Nativism vs. The Bottom Line"](https://jacobin.com/2025/09/nativism-vs-the-bottom-line) (*Jacobin*)
+
+["A Key Opportunity to Check Trump: Stopping Medicaid Cut"](https://jacobin.com/2025/02/trump-medicaid-cuts-work-requirements) (*Jacobin*)
+
 
 # Academic Publications
+
+["*Racecraft* as a Challenge to the Sociology of Race"](https://journals.sagepub.com/doi/abs/10.1177/23326492221136164) (*Sociology of Race and Ethnicity*)
+
+["Black Marxist Off the Color Line: W.E.B. Du Bois and Oliver Cromwell Cox as Democratic Theorists"](https://academic.oup.com/manchester-scholarship-online/book/42417/chapter-abstract/356653841?redirectedFrom=fulltext) in Christopher Phelps and Robin Vandome, eds., *Marxism and America: New Appraisals*.
 
 # Media Appearances
 
