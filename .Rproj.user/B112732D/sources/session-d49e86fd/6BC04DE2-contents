@@ -1,9 +1,0 @@
-name: "my-website"
-output_dir: "docs"
-navbar:
-  title: "Paul Heideman"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "Writings & Media"
-      href: writingsandmedia.html
