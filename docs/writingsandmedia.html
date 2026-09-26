@@ -11,9 +11,9 @@
 
 
 
-<title>Writings and Media</title>
+<title>Writings &amp; Media</title>
 
-<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -30,8 +30,12 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script>document.documentElement.classList.add("js");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Paul Heideman — writer, editor, and teacher. Author of Rogue Elephant (Verso, 2025).">
+<script src="site.js" defer></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -42,22 +46,13 @@
   ul.task-list{list-style: none;}
     </style>
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
 
 
 
 
 
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 
 
 
@@ -260,43 +255,34 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Writings and Media</h1>
+<h1 class="title toc-ignore">Writings &amp; Media</h1>
 
 </div>
 
 
+<div class="page-intro reveal">
+<p>Essays, books, scholarship, and conversations on American politics
+and the history of the left.</p>
+</div>
+<div class="section-block">
+<p><span class="num">01</span></p>
 <div id="substack" class="section level1">
 <h1>Substack</h1>
-<div id="rss-feed">
-
+<div id="rss-feed" class="feed"
+data-rss="https://paulheideman.substack.com/feed">
+<p class="feed-loading">
+Loading latest posts…
+</p>
 </div>
-<script type="text/javascript">
-  async function loadRSS() {
-    const rss_url = 'https://paulheideman.substack.com/feed';
-    const api_url = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rss_url);
-
-    try {
-      const response = await fetch(api_url);
-      const data = await response.json();
-
-      let html = '<ul>';
-      data.items.slice(0, 5).forEach(item => {
-        html += `<li><a href="${item.link}" target="_blank">${item.title}</a></li>`;
-      });
-      html += '</ul>';
-      document.getElementById('rss-feed').innerHTML = html;
-    } catch (error) {
-      document.getElementById('rss-feed').innerHTML = 'Unable to load feed.';
-    }
-  }
-
-  loadRSS();
-</script>
 </div>
+</div>
+<div class="section-block">
+<p><span class="num">02</span></p>
 <div id="books" class="section level1">
 <h1>Books</h1>
+<div class="entries">
 <p><a
-href="https://www.versobooks.com/products/3071-rogue-elephant?srsltid=AfmBOopkwixwhTX2USNS5AEzmM2EuYpouSODgQcqpoSpuHgV9lhKyLgG"><em>Rogue
+href="https://www.versobooks.com/products/3071-rogue-elephant"><em>Rogue
 Elephant: The Republicans from the Party of Business to the Party of
 Chaos</em></a> (Verso, 2025)</p>
 <p>with Kent Worcester, <a
@@ -307,21 +293,76 @@ href="https://www.haymarketbooks.org/books/946-class-struggle-and-the-color-line
 Struggle and the Color Line: American Socialism and the Race Question,
 1900-1930</em></a> (Haymarket, 2018)</p>
 </div>
+</div>
+</div>
+<div class="section-block">
+<p><span class="num">03</span></p>
 <div id="recent-articles" class="section level1">
 <h1>Recent Articles</h1>
+<div class="entries">
+<p><a
+href="https://jacobin.com/2026/08/dsa-freedom-caucus-congress-parties">“For
+Socialists, Legislative Hardball Has Limits”</a> (<em>Jacobin</em>,
+Aug. 2026)</p>
+<p><a
+href="https://jacobin.com/2026/08/hong-wisconsin-primary-loss-lessons">“Five
+Takeaways From Francesca Hong’s Near-Win in Wisconsin”</a>
+(<em>Jacobin</em>, Aug. 2026)</p>
+<p><a
+href="https://jacobin.com/2026/08/carceral-minimalism-policing-prison-abolition">“The
+Case for Carceral Minimalism”</a> (<em>Jacobin</em>, Aug. 2026)</p>
+<p><a
+href="https://jacobin.com/2026/08/republican-party-trump-business-class">“Ruling-Class
+Disarray Let the GOP Go Off the Rails”</a> (<em>Jacobin</em>,
+Aug. 2026)</p>
+<p><a
+href="https://jacobin.com/2026/06/obituary-greenspan-federal-reserve-neoliberalism">“Alan
+Greenspan Was a Faithful Servant of the Ruling Class”</a>
+(<em>Jacobin</em>, June 2026)</p>
+<p><a
+href="https://jacobin.com/2026/03/trump-foreign-policy-war-iran">“The
+GOP Is at War — Without the Foreign Policy Establishment”</a>
+(<em>Jacobin</em>, Mar. 2026)</p>
+<p><a
+href="https://jacobin.com/2026/02/trump-state-of-the-union-address">“Donald
+Trump Is Staying the Course”</a> (<em>Jacobin</em>, Feb. 2026)</p>
+<p><a href="https://jacobin.com/2025/12/paint-the-town-red">“Paint the
+Town Red”</a> (<em>Jacobin</em>, Dec. 2025)</p>
+<p><a
+href="https://jacobin.com/2025/11/nativism-vs-the-bottom-line">“Nativism
+vs. the Bottom Line”</a> (<em>Jacobin</em>, Nov. 2025)</p>
+<p><a
+href="https://jacobin.com/2025/10/claus-offe-power-labor-capital">“Why
+the Deck Is Stacked Against Workers Under Capitalism”</a>
+(<em>Jacobin</em>, Oct. 2025)</p>
+<p><a
+href="https://jacobin.com/2025/05/donald-trump-republicans-gop-disarray">“Donald
+Trump Rules Over a GOP in Disarray”</a> (<em>Jacobin</em>, May 2025)</p>
 <p><a
 href="https://catalyst-journal.com/2025/04/trumps-takeover-of-the-republicans">“Trump’s
-Takeover of the Republicans”</a> (<em>Catalyst</em>)</p>
+Takeover of the Republicans”</a> (<em>Catalyst</em>, Apr. 2025)</p>
 <p><a
-href="https://jacobin.com/2025/09/nativism-vs-the-bottom-line">“Nativism
-vs. The Bottom Line”</a> (<em>Jacobin</em>)</p>
+href="https://jacobin.com/2025/04/capitalist-disorganization-trump-republicans-trade">“Capitalist
+Disorganization Has Enabled Trump’s Dominance”</a> (<em>Jacobin</em>,
+Apr. 2025)</p>
 <p><a
 href="https://jacobin.com/2025/02/trump-medicaid-cuts-work-requirements">“A
-Key Opportunity to Check Trump: Stopping Medicaid Cut”</a>
-(<em>Jacobin</em>)</p>
+Key Opportunity to Check Trump: Stopping Medicaid Cuts”</a>
+(<em>Jacobin</em>, Feb. 2025)</p>
+<p><a
+href="https://jacobin.com/2025/01/trump-weakness-federal-funding-medicaid">“Trump’s
+Weakness Is the Left’s Opportunity”</a> (<em>Jacobin</em>,
+Jan. 2025)</p>
 </div>
+<p><a href="https://jacobin.com/author/paul-heideman"
+class="more-link">All articles at <em>Jacobin</em> →</a></p>
+</div>
+</div>
+<div class="section-block">
+<p><span class="num">04</span></p>
 <div id="academic-publications" class="section level1">
 <h1>Academic Publications</h1>
+<div class="entries">
 <p><a
 href="https://journals.sagepub.com/doi/abs/10.1177/23326492221136164">“<em>Racecraft</em>
 as a Challenge to the Sociology of Race”</a> (<em>Sociology of Race and
@@ -332,8 +373,31 @@ Marxist Off the Color Line: W.E.B. Du Bois and Oliver Cromwell Cox as
 Democratic Theorists”</a> in Christopher Phelps and Robin Vandome, eds.,
 <em>Marxism and America: New Appraisals</em>.</p>
 </div>
+</div>
+</div>
+<div class="section-block">
+<p><span class="num">05</span></p>
 <div id="media-appearances" class="section level1">
 <h1>Media Appearances</h1>
+<div class="chips">
+<p><a
+href="https://www.thenation.com/podcast/politics/ap-040926/"><em>American
+Prestige</em> (<em>The Nation</em>)</a></p>
+<p><a
+href="https://thedigradio.com/podcast/rogue-elephant-w-paul-heideman/"><em>The
+Dig</em></a></p>
+<p><a
+href="https://kpfa.org/episode/against-the-grain-may-27-2026/"><em>Against
+the Grain</em> (KPFA)</a></p>
+<p><a
+href="https://podcasts.apple.com/us/podcast/how-the-gop-and-the-dems-got-so-weird/id1744345702?i=1000776264016"><em>American
+Friction</em></a></p>
+<p><a
+href="https://www.youtube.com/watch?v=u74LNTocTag"><em>Emancipations
+with Daniel Tutt</em></a></p>
+<p><a
+href="https://www.wortfm.org/trumps-combative-relationship-with-american-business/"><em>A
+Public Affair</em> (WORT 89.9 FM)</a></p>
 <p><a
 href="https://open.spotify.com/episode/5Mx4bvEh4qIHGllflmplO1"><em>Confronting
 Capitalism with Vivek Chibber</em></a></p>
@@ -349,6 +413,8 @@ Real News Network</em></a></p>
 <p><a
 href="https://newbooksnetwork.com/class-struggle-and-the-color-line"><em>New
 Books Network</em></a></p>
+</div>
+</div>
 </div>
 
 

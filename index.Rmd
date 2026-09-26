@@ -1,17 +1,81 @@
 ---
-title: "Paul Heideman"
+pagetitle: "Paul Heideman"
 ---
 
+::: {.hero}
+::: {.hero-text}
+[Writer · Editor · Teacher]{.eyebrow .reveal}
 
-# Writer and Teacher
+<h1 class="hero-name"><span class="line"><span>Paul</span></span><span class="line"><span>Heideman</span></span></h1>
 
-Author of the books [*Rogue Elephant: The Republicans from the Party of Business to the Party of Chaos*](https://www.versobooks.com/products/3071-rogue-elephant?srsltid=AfmBOopkwixwhTX2USNS5AEzmM2EuYpouSODgQcqpoSpuHgV9lhKyLgG), [*Third Camp Socialism: A Phyllis and Julius Jacobson Reader*](https://brill.com/display/title/71849) (with Kent Worcester), and [*Class Struggle and the Color Line: American Socialism and the Race Question, 1900-1930*](https://www.haymarketbooks.org/books/946-class-struggle-and-the-color-line). Paul Heideman is a researcher, writer, and teacher, whose work covers party politics in the United States, the history of the American left, and American intellectual history.
+::: {.hero-lede .reveal}
+Researcher, writer, and teacher whose work covers party politics in the United States, the history of the American left, and American intellectual history. Associate editor at *Jacobin* magazine.
+:::
 
-His writing has appeared in publications including *Jacobin*, *In These Times*, *Dissent*, *Sociology of Race and Ethnicity*, and *Catalyst*.
+::: {.hero-actions .reveal}
+[Read the writing →](writingsandmedia.html){.btn-primary-x}
+[Get in touch](#contact){.btn-ghost}
+:::
+:::
 
+::: {.cover-stack}
+[![Third Camp Socialism](img/third-camp.jpg)](https://brill.com/display/title/71849){.cover .c1}
+[![Class Struggle and the Color Line](img/class-struggle.jpg)](https://www.haymarketbooks.org/books/946-class-struggle-and-the-color-line){.cover .c2}
+[![Rogue Elephant](img/rogue-elephant.jpg)](https://www.versobooks.com/products/3071-rogue-elephant){.cover .c3}
+:::
+:::
 
-![](books.png)
+<div class="ticker" aria-label="Writing has appeared in">
+<div class="ticker-track">
+<span>Jacobin</span><span>In These Times</span><span>Dissent</span><span>Sociology of Race and Ethnicity</span><span>Catalyst</span>
+<span aria-hidden="true">Jacobin</span><span aria-hidden="true">In These Times</span><span aria-hidden="true">Dissent</span><span aria-hidden="true">Sociology of Race and Ethnicity</span><span aria-hidden="true">Catalyst</span>
+</div>
+</div>
 
+::: {.band}
+[Books]{.kicker .reveal}
 
+## Three books on American politics and the left
 
-He can be reached at pmheideman[at]gmail.com
+::: {.book-grid}
+::: {.book .reveal}
+[![](img/rogue-elephant.jpg)](https://www.versobooks.com/products/3071-rogue-elephant){.book-cover}
+
+[Verso · 2025]{.meta}
+
+### [Rogue Elephant](https://www.versobooks.com/products/3071-rogue-elephant)
+
+The Republicans from the Party of Business to the Party of Chaos
+:::
+
+::: {.book .reveal}
+[![](img/third-camp.jpg)](https://brill.com/display/title/71849){.book-cover}
+
+[Brill · 2025 · with Kent Worcester]{.meta}
+
+### [Third Camp Socialism](https://brill.com/display/title/71849)
+
+A Phyllis and Julius Jacobson Reader
+:::
+
+::: {.book .reveal}
+[![](img/class-struggle.jpg)](https://www.haymarketbooks.org/books/946-class-struggle-and-the-color-line){.book-cover}
+
+[Haymarket · 2018]{.meta}
+
+### [Class Struggle and the Color Line](https://www.haymarketbooks.org/books/946-class-struggle-and-the-color-line)
+
+American Socialism and the Race Question, 1900–1930
+:::
+:::
+:::
+
+::: {#contact .contact .reveal}
+[Contact]{.kicker}
+
+## Let's talk.
+
+For interviews, talks, and editorial inquiries:
+
+<a class="email" data-user="pmheideman" data-domain="gmail.com">pmheideman[at]gmail.com</a>
+:::

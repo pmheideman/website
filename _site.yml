@@ -1,5 +1,6 @@
 name: "my-website"
 output_dir: "docs"
+exclude: ["books.png", "update.sh", "website.Rproj", "header.html"]
 navbar:
   title: "Paul Heideman"
   left:
@@ -7,3 +8,9 @@ navbar:
       href: index.html
     - text: "Writings & Media"
       href: writingsandmedia.html
+output:
+  html_document:
+    css: styles.css
+    highlight: null
+    includes:
+      in_header: header.html
